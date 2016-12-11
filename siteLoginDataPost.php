@@ -33,7 +33,7 @@ else{
 
 ?>
 
-
+//REMOVE THE FOLLOWING LOG OUT FORM IF THERE IS ANY PROBLEMS WITH THE ANDROID APP INTERACTION
 
 <form action="logout.php" method="POST">
 <input type="hidden" name="logged_user_id" value=<?php echo htmlspecialchars($user_id) ?>>
