@@ -3,6 +3,9 @@
 <body>
 
 <?php
+
+require "connect.inc.php";
+
 $servername = "localhost";
 $username = "root";
 $password = "";
