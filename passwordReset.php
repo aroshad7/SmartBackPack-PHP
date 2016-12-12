@@ -36,6 +36,7 @@ if($query_run=mysql_query($sql_get)){
         $msg = "Dear " . $name . ", \nYour VAMP account password has been reset. Use this as the temporary password for choosing a new password. \nTemporary Password - " . $ranPassword;
         /*$msg = wordwrap($msg,100);*/
         mail($email,"VAMP Account Password Reset",$msg);
+        echo "Check your email for the temporary password.";
     }
     else{
         echo "Invalid user_id!";

@@ -17,7 +17,6 @@ if($query_run=mysql_query($sql_get)){
     if(mysql_num_rows($query_run)!=0){
         $query_row = mysql_fetch_assoc($query_run);
         echo ($query_row['location']);
-        echo $sql_update;
         $query_stat=mysql_query($sql_update);
     }
     else{
